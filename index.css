@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.top{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+
+}
+
+.game-info{
+    background-color: rgba(255, 255, 255, 0.397);
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.397) ;
+    padding: 0.5rem 3rem;
+    
+}
+.tic{
+    width: 90%;
+    max-width: 20rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgba(255, 255, 255, 0.397);
+    border: 1px solid rgba(255, 255, 255, 0.397) ;
+    aspect-ratio: 1/1;
+}
+.box{
+    position: relative;
+    aspect-ratio: 1/1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+
+}
+
+.box1,.box2,.box4,.box5{
+    border-right: 2px solid white;
+    border-bottom:2px solid white;
+}
+.box3,.box6{
+    border-bottom:2px solid white;
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+.btn{
+    background-color: rgba(255, 255, 255, 0.397);
+    border: 1px solid rgba(255, 255, 255, 0.397) ;
+    /* position: absolute; */
+    /* bottom: 3rem; */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 3rem;
+    display: none;
+}
+.btn.active{
+    display: flex;
+}
+.win{
+    background-color: green;
+}
